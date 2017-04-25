@@ -1,9 +1,12 @@
+print(“本日清單”)
+
 banana
 orange
 apple
 
 
 print(“but I don’t like them….”)
+
 
 
 <h1>bananababanana
@@ -27,3 +30,22 @@ bananababanana
 bananababanana
 bananababanana
 bananababanana<h1>
+
+enum Example: String {
+    case CollectionViewController
+    case CollectionView
+    case CollectionViewWithCustomLayout
+    
+    func segueIdentifier() -> String {
+        switch(self) {
+        case .CollectionViewController:
+            return "FirstSegueIdentifier"
+        case .CollectionView:
+            return "SecondSegueIdentifier"
+        case .CollectionViewWithCustomLayout:
+            return "ThirdSegueIdentifier"
+        }
+    }
+}
+
+
